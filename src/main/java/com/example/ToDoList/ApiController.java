@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
     @RestController
-    @RequestMapping("/api")
+    @RequestMapping("/main")
     public class ApiController {
 
         @GetMapping("/hello")
         public String hello() {
-            return "Hello, this is your API!";
+            return "Heil Hitler, lubie zabijac chochlikow";
         }
     }
 
