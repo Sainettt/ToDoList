@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ApiController2 {
     @GetMapping("/hello2")
     public String hello2(){
-        return "Delaem proekt"; 
+        return "Delaem proekt";
     }
 
 }
