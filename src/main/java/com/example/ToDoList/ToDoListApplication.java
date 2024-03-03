@@ -2,6 +2,8 @@ package com.example.ToDoList;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
 public class ToDoListApplication {
@@ -12,6 +14,14 @@ public class ToDoListApplication {
 		for (int i = 0; i < 4; i++) {
 			i++;
 			System.out.println(i);
+		}
+	}
+	@Controller
+	public static class HomeController {
+
+		@GetMapping("/")
+		public String home() {
+			return "index";
 		}
 	}
 
