@@ -12,7 +12,7 @@ public class ToDoListApplication {
 		SpringApplication.run(ToDoListApplication.class, args);
 
 		}
-	
+
 	@Controller
 	public static class HomeController {
 
